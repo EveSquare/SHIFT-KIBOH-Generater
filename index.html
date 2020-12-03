@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      body{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      h1{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form{
+        text-align: center;
+        margin: 0 40px;
+      }
+      .days input{
+        margin-bottom: 3px;
+      }
+      .days{
+        margin-left: 120px;
+      }
+      footer{
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SHIFT KIBOH Generater</h1>
+    <form action="https://script.google.com/macros/s/AKfycbzZhDodoCy0ubZADyBA8VpoxbfgNN3SURZN1ZTwQOjzUaqBPifI/exec" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="tel" class="form-control" name="month" placeholder="月を指定">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="tel" class="form-control" name="half" placeholder="前半：1　後半：2">
+        </div>
+      </div>
+        <br>
+      <div class="days">
+        <div class="form-group row">
+          <label for="Mon">月</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="Mon" name="Mon" placeholder="月" value="x">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Mon">火</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Tue" placeholder="火" value="x">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Mon">水</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Wed" placeholder="水" value="x">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Mon">木</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Thu" placeholder="木" value="x">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Mon">金</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Fri" placeholder="金" value="x">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Mon">土</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Sat" placeholder="土" value="x">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Mon">日</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="Sun" placeholder="日" value="x">
+          </div>
+        </div>
+      </div>
+        <input type="submit" class="btn btn-primary" value="送信">
+    </form>
+    <footer>
+      <small>EveSquare</small>
+    </footer>
+  </body>
+</html>
